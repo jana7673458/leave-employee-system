@@ -1,0 +1,34 @@
+﻿<p>
+    يتيح هذا النظام للموظفين تقديم طلبات الإجازة
+    وتحديد نوعها والفترة المطلوبة بسهولة.
+</p>
+
+<section>
+    <h2>تقديم طلب إجازة</h2>
+
+    <form id="leaveForm">
+        <label for="employeeName">اسم الموظف</label>
+        <input type="text" id="employeeName"
+               name="employeeName" required>
+
+        <label for="leaveType">نوع الإجازة</label>
+        <select id="leaveType" name="leaveType" required>
+            <option value="">اختر نوع الإجازة</option>
+            <option value="annual">إجازة سنوية</option>
+            <option value="sick">إجازة مرضية</option>
+            <option value="emergency">إجازة اضطرارية</option>
+        </select>
+
+        <label for="startDate">تاريخ بداية الإجازة</label>
+        <input type="date" id="startDate"
+               name="startDate" required>
+
+        <label for="endDate">تاريخ نهاية الإجازة</label>
+        <input type="date" id="endDate"
+               name="endDate" required>
+
+        <button type="submit">إرسال طلب الإجازة</button>
+
+        <p id="confirmation" role="status"></p>
+    </form>
+</section>
